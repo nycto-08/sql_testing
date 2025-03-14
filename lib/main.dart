@@ -74,6 +74,15 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {},
               child: const Text('Receive'),
             ),
+            const SizedBox(height: 20),
+            TextField(
+              readOnly: true,
+              decoration: InputDecoration(
+                labelText: 'Received Message',
+                border: const OutlineInputBorder(),
+                hintText: _receivedText,
+              ),
+            ),
           ],
         ),
       ),
